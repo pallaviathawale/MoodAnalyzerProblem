@@ -32,5 +32,32 @@ namespace MSTestMoodAnalyzer
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void Refactor1() //Refactor-Testcase1
+        {
+            string input = "I am in Sad Mood";
+            string expected = "SAD";
+
+
+            MoodAnalyser moodAnalyser = new MoodAnalyser();
+
+            string actual = moodAnalyser.msg;
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Refactor2()  //Refactor-TestCase2
+        {
+            string input = "I am in Happy Mood";
+            string expected = "SAD";
+
+
+            MoodAnalyser moodAnalyser = new MoodAnalyser();
+
+            string actual = moodAnalyser.msg;
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
